@@ -46,7 +46,7 @@ h1.pagetitle{ font-family:'Manrope', sans-serif; font-weight:800; font-size:30px
 .obj-item p{ margin:0; font-size:13px; color:#333; }
 
 .lesson-list{ margin:0; padding:0; list-style:none; }
-.lesson-list li{ display:grid; grid-template-columns:52px 1fr; gap:12px; padding:7px 0; font-size:13px; }
+.lesson-list li{ display:block; padding:7px 0; font-size:13px; }
 .lesson-list .d{ color:var(--sub); font-weight:600; font-size:11.5px; }
 .lesson-list strong{ font-weight:600; }
 .lesson-list span.desc{ color:var(--sub); }
@@ -189,7 +189,7 @@ table.rubric td.cat{ background:var(--bg); font-weight:700; color:var(--accent);
   <div class="fw-cols">
     <div>
       <h5 style="color:var(--accent);">Row House <span style="font-weight:600;">(Cycles 1–3)</span></h5>
-      <p style="font-size:13px; color:#333;">A riverfront row house design challenge: IRC compliance, 3+ sustainability features, an alternative building technique, riverfront integration, a distinct aesthetic identity, and a complete electrical/RCP layer. Standards: 11.1 (IBC/ADA/OSHA), 11.2 (Climate/LEED/Alt. Rating), 11.3 (Electrical).</p>
+      <p style="font-size:13px; color:#333;">A riverfront row house design challenge, drafted in AutoCAD: a building program, schematic design, code report, plans, elevations, building section, site plan, and a final presentation poster with physical models — while Revit is introduced in parallel as a skill-building track. Standards: 11.1 (IBC/ADA/OSHA), 11.2 (Climate/LEED/Alt. Rating), 11.3 (Electrical).</p>
       <h5 style="color:var(--accent);">House <span style="font-weight:600;">(Cycles 4–5)</span></h5>
       <p style="font-size:13px; color:#333;">A single-family home on a wooded site, centered on plumbing and HVAC integration plus a client-ready rendering. Standards: 11.4, 11.5.</p>
     </div>
@@ -205,7 +205,7 @@ table.rubric td.cat{ background:var(--bg); font-weight:700; color:var(--accent);
 <div class="ref-section">
   <h3>ROW HOUSE</h3>
   <p style="font-size:12.5px; color:var(--sub); margin:-6px 0 12px;">Special Issue: Residential Building Codes &middot; Sustainable Initiative &middot; Residential Design</p>
-  <p style="font-size:13.5px; color:#333;">Welcome to the Riverfront Row House Design Challenge! As aspiring architects, you've been hired by a forward-thinking developer to design a series of unique row houses along a picturesque riverfront property. This project will span Cycles 1&ndash;2 and challenge you to blend creativity, sustainability, and technical knowledge.</p>
+  <p style="font-size:13.5px; color:#333;">Welcome to the Riverfront Row House Design Challenge! As aspiring architects, you've been hired by a forward-thinking developer to design a series of unique row houses along a picturesque riverfront property. This project will span Cycles 1&ndash;3 and challenge you to blend creativity, sustainability, and technical knowledge.</p>
 </div>
 <div class="ref-section">
   <h3>HOUSE</h3>
@@ -225,18 +225,17 @@ table.rubric td.cat{ background:var(--bg); font-weight:700; color:var(--accent);
 
 <div class="ref-section">
   <h3>Deliverable Map — Cycles 1–10</h3>
-  <table style="width:100%; border-collapse:collapse;"><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">1</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Row House — Program &amp; IBC-Compliant Floor Plan</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">2</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Row House — ADA Compliance &amp; Sustainability Features</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">3</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Row House (Final) — Complete Riverfront Design</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">4</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">House — Kitchen &amp; Bathroom Plumbing Layout</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">5</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">House (Final) — Mechanical Plan &amp; Rendering</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">6</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">DD Set — Alternative Material Selection &amp; Firm Structure</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">7</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">DD Set (Final) — Permitting, Client Communication &amp; DD Drawing Set</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">8</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Mixed-Use — Bid Package Response &amp; Alternative Technique at Scale</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">9</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Mixed-Use — Program &amp; Alternative Technique Complete</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">10</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Mixed-Use (Final) &amp; Year-End Portfolio</td></tr></table>
+  <table style="width:100%; border-collapse:collapse;"><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">1</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Row House — Building Program, Schematic Design &amp; Code Report</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">2</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Row House — Plans, Elevations, Building Section &amp; Materials</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">3</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Row House (Final) — Presentation Poster &amp; Models</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">4</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">House — Kitchen &amp; Bathroom Plumbing Layout</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">5</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">House (Final) — Mechanical Plan &amp; Rendering</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">6</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">DD Set — Alternative Material Selection &amp; Firm Structure</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">7</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">DD Set (Final) — Permitting, Client Communication &amp; DD Drawing Set</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">8</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Mixed-Use — Bid Package Response &amp; Alternative Technique at Scale</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">9</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Mixed-Use — Program &amp; Alternative Technique Complete</td></tr><tr><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">10</td><td style="padding:8px; border-bottom:1px solid var(--line); font-size:13px;">Mixed-Use (Final) &amp; Year-End Portfolio</td></tr></table>
 </div>
 
 <div class="ref-section">
-  <h3>Recurring Threads</h3>
-  <p style="font-size:13.5px; color:#333; margin:0 0 10px;"><strong>BIM &amp; Advanced Rendering (11.7):</strong> not a standalone cycle — threaded across Cycles 1–9's Software Exercise assignments, sequenced so each new Revit or rendering skill lands exactly when that cycle's project needs it.</p>
-  <p style="font-size:13.5px; color:#333; margin:0;"><strong>Notable Architects (11.6.3):</strong> a running "Precedent Spotlight" on every cycle page from Cycle 1–9, each figure chosen to connect directly to that cycle's content.</p>
+  <h3>Software Thread</h3>
+  <p style="font-size:13.5px; color:#333; margin:0;"><strong>BIM &amp; Advanced Rendering (11.7):</strong> not a standalone cycle — threaded across Cycles 1–9's Software Exercise assignments. Cycles 1–3 use it as a parallel skill-building track in practice files (Row House itself is drafted in AutoCAD); from Cycle 4 on, Revit becomes the actual production tool, with each new skill landing exactly when that cycle's project needs it.</p>
 </div>
 
 <div class="ref-section">
   <h3>Software Progression</h3>
-  <p style="font-size:13.5px; color:#333; margin:0;">Unlike Grade 10's AutoCAD-first approach, Grade 11 begins directly in <strong>Revit</strong> at Cycle 1 — Grade 10 already established 2D CAD fundamentals, so this year builds straight onto BIM.</p>
+  <p style="font-size:13.5px; color:#333; margin:0;">The Row House project (Cycles 1&ndash;3) is drafted in <strong>AutoCAD</strong>, continuing directly from Grade 10. Revit is introduced in parallel starting Cycle 1 as a skill-building track — practice files, not production drawings — so that by Cycle 4, when the House project begins, students can transition to producing every deliverable in <strong>Revit</strong> from the start.</p>
 </div>
 
 <div class="card project-card">
